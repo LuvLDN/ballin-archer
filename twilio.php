@@ -7,7 +7,7 @@ if(isset($_POST['to'])) {
 	$message = $_POST['message'];
 } else {
 	$to = "+447853262719";
-	$from = "+15005555006";
+	$from = "+441782435576";
 	$message = "hello world";
 }
 
@@ -23,7 +23,5 @@ try {
 } catch(Exception $e) {
 	echo '{"status":"error", "message": "' . $e->getMessage() . '" }';
 }
-
-
 
 ?>
