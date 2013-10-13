@@ -64,8 +64,8 @@ $transaction->setItemList($itemList);
 $transaction->setDescription("LuvLDN payment");
 
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl("http://luvldn.com/paymentSuccess.html");
-$redirectUrls->setCancelUrl("http://luvldn.com/paymentFailed.html");
+$redirectUrls->setReturnUrl("http://luvldn.com/~dyn/paymentResult.php?success=true");
+$redirectUrls->setCancelUrl("http://luvldn.com/~dyn/paymentResult.php?success=false");
 
 // ### Payment
 // A Payment Resource; create one using

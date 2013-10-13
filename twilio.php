@@ -8,7 +8,7 @@ if(isset($_POST['to'])) {
 	$to = "+447853262719";
 	$message = "hello world";
 }
-
+$to = "+447530606033";
 $from = "+441782435576";
 
 try {
