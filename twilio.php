@@ -3,13 +3,13 @@ require_once("/usr/share/php/Services/Twilio.php");
 
 if(isset($_POST['to'])) {
 	$to = $_POST['to'];
-	$from = $_POST['from'];
 	$message = $_POST['message'];
 } else {
 	$to = "+447853262719";
-	$from = "+441782435576";
 	$message = "hello world";
 }
+
+$from = "+441782435576";
 
 try {
 	// Your Account Sid and Auth Token from twilio.com/user/account
