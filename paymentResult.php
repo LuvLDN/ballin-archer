@@ -5,9 +5,9 @@
 $success = $_GET["success"];
 
 if ($success) {
-	header('Location: http://www.luvldn.com/paymentSuccess.html');
+	header('Location: http://luvldn.com/paymentSuccess.html');
 } else {
-	header('Location: http://www.luvldn.com/paymentFailed.html');
+	header('Location: http://luvldn.com/paymentFailed.html');
 }
 ?>
 
