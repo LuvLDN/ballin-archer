@@ -12,12 +12,12 @@ use PayPal\Api\Payment;
 use PayPal\Api\Transaction;
 use PayPal\Api\RedirectUrls;
 
-if(isset($_POST["userEmail"])) {
-	$userEmail = $_POST["userEmail"];
-	$merchantEmail = $_POST["merchantEmail"];
+if(isset($_GET["userEmail"])) {
+	$userEmail = $_GET["userEmail"];
+	$merchantEmail = $_GET["merchantEmail"];
 
-	$productName = $_POST["productName"];
-	$productPrice = $_POST["productPrice"];
+	$productName = $_GET["productName"];
+	$productPrice = $_GET["productPrice"];
 } else {
 	//mock up the values
 	$userEmail = "user@luvldn.com";
